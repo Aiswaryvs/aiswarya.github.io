@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
 import { Skills } from "@/components/portfolio/Skills";
+import { Experience } from "@/components/portfolio/Experience";
 import { Projects } from "@/components/portfolio/Projects";
 import { Contact } from "@/components/portfolio/Contact";
 import { Navbar } from "@/components/portfolio/Navbar";
@@ -10,16 +11,17 @@ import { Footer } from "@/components/portfolio/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Python Developer Portfolio — Backend Engineer" },
+      { title: "Aiswarya V S — Python Developer (Django · DRF · FastAPI)" },
       {
         name: "description",
         content:
-          "Portfolio of a Python developer with 3 years of experience building scalable APIs with FastAPI, Django, Celery, PostgreSQL, and React.",
+          "Aiswarya V S — Software Engineer with 3 years of experience building scalable Python backends with Django, DRF, FastAPI, Celery, PostgreSQL, and React. Based in UAE, open to relocation.",
       },
-      { property: "og:title", content: "Python Developer Portfolio" },
+      { property: "og:title", content: "Aiswarya V S — Python Developer Portfolio" },
       {
         property: "og:description",
-        content: "FastAPI · Django · Celery · PostgreSQL · Docker — 3 years building production backends.",
+        content:
+          "Django · DRF · FastAPI · Celery · PostgreSQL · Docker — 3 years shipping production backends.",
       },
     ],
   }),
@@ -34,6 +36,7 @@ function Index() {
         <Hero />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Contact />
       </main>
