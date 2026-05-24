@@ -4,6 +4,7 @@ import { Code2, Menu, X } from "lucide-react";
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
@@ -36,9 +37,9 @@ export function Navbar() {
               <Code2 className="h-5 w-5" />
             </div>
             <span className="font-mono text-sm tracking-tight">
-              <span className="text-muted-foreground">dev</span>
+              <span>aiswarya</span>
               <span className="text-primary">.</span>
-              <span>py</span>
+              <span className="text-muted-foreground">py</span>
             </span>
           </a>
 

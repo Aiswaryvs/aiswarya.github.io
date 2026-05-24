@@ -1,38 +1,67 @@
-import { Briefcase, Rocket, Users } from "lucide-react";
+import { Briefcase, GraduationCap, Rocket, Server } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 
 const stats = [
   { icon: Briefcase, value: "3+", label: "Years experience" },
-  { icon: Rocket, value: "20+", label: "Projects shipped" },
-  { icon: Users, value: "10+", label: "Happy clients" },
+  { icon: Server, value: "50+", label: "REST APIs shipped" },
+  { icon: Rocket, value: "7+", label: "Production products" },
+  { icon: GraduationCap, value: "MCA", label: "Master's degree" },
 ];
 
 export function About() {
   return (
     <section id="about" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionHeading kicker="01 — About" title="A backend engineer who cares about clean systems." />
+        <SectionHeading
+          kicker="01 — About"
+          title="A backend engineer who cares about clean systems."
+        />
 
         <div className="mt-12 grid gap-10 md:grid-cols-5 md:gap-16">
           <div className="md:col-span-3">
             <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
-              I'm a Python developer with <span className="text-foreground">3 years</span> of
-              hands-on experience designing and shipping production-grade backends. I specialize in
-              building secure RESTful APIs with <span className="text-primary">FastAPI</span> and{" "}
-              <span className="text-primary">Django</span>, integrating third-party services, and
-              architecting asynchronous pipelines with <span className="text-primary">Celery</span>{" "}
-              and <span className="text-primary">RabbitMQ</span>.
+              I'm <span className="text-foreground">Aiswarya V S</span>, a results-driven Software
+              Engineer specializing in Python web development. Over the past{" "}
+              <span className="text-foreground">3 years</span> at{" "}
+              <span className="text-foreground">Pearlsoft Technologies</span>, I've designed and
+              shipped production-grade backends with{" "}
+              <span className="text-primary">Django</span>,{" "}
+              <span className="text-primary">Django REST Framework</span>, and{" "}
+              <span className="text-primary">FastAPI</span> across healthcare, rental, and
+              queue-management platforms.
             </p>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              I care deeply about authentication done right — JWT, OAuth 2.0, RBAC — and about
-              writing code that other engineers actually enjoy reading. I'm just as comfortable
-              modeling Postgres schemas as I am crafting React components for a smooth full-stack
-              experience.
+              I care deeply about secure auth done right — JWT, OAuth 2.0, RBAC — building
+              asynchronous pipelines with <span className="text-primary">Celery</span> and{" "}
+              <span className="text-primary">RabbitMQ</span>, and integrating React frontends with
+              well-documented REST APIs. I thrive in Agile teams and enjoy turning messy domain
+              requirements into clean, maintainable systems.
             </p>
+
+            <div className="mt-8 rounded-2xl border border-border bg-surface/50 p-5">
+              <div className="flex items-center gap-2 text-sm font-semibold">
+                <GraduationCap className="h-4 w-4 text-primary" />
+                Education
+              </div>
+              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span>
+                    <span className="text-foreground">Master of Computer Application</span> · Kerala, India
+                  </span>
+                  <span className="font-mono text-xs">2018 – 2022 · CGPA 7.92</span>
+                </li>
+                <li className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span>
+                    <span className="text-foreground">Bachelor of Computer Application</span> · Kerala, India
+                  </span>
+                  <span className="font-mono text-xs">2015 – 2018 · CGPA 7.18</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="md:col-span-2">
-            <div className="grid gap-4">
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-1">
               {stats.map((s) => (
                 <div
                   key={s.label}

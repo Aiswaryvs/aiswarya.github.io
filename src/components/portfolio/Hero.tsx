@@ -1,11 +1,12 @@
-import { ArrowRight, Download, Github, Linkedin, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, MapPin, Sparkles } from "lucide-react";
 
 const codeLines = [
-  { t: "class", v: "Developer:", c: "text-[oklch(0.75_0.16_300)]" },
-  { t: "    name", v: '= "Python Engineer"', c: "text-primary" },
-  { t: "    experience", v: '= "3 years"', c: "text-accent" },
-  { t: "    stack", v: '= ["FastAPI", "Django"]', c: "text-[oklch(0.8_0.15_85)]" },
-  { t: "    passion", v: '= "Scalable APIs"', c: "text-primary" },
+  { t: "class", v: "Engineer:", c: "text-[oklch(0.75_0.16_300)]" },
+  { t: "    name", v: '= "Aiswarya V S"', c: "text-primary" },
+  { t: "    role", v: '= "Python Developer"', c: "text-accent" },
+  { t: "    experience", v: '= "3 years"', c: "text-[oklch(0.8_0.15_85)]" },
+  { t: "    stack", v: '= ["Django", "FastAPI", "DRF"]', c: "text-primary" },
+  { t: "    location", v: '= "UAE — Open to relocate"', c: "text-accent" },
 ];
 
 export function Hero() {
@@ -31,20 +32,21 @@ export function Hero() {
         <div className="animate-fade-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             <Sparkles className="h-3.5 w-3.5" />
-            Available for new projects
+            Available immediately — Own visa, UAE
           </span>
 
           <h1 className="mt-6 text-balance font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
-            Building robust{" "}
-            <span className="text-gradient bg-[length:200%_auto] animate-gradient">backends</span>
+            Hi, I'm <span className="text-gradient bg-[length:200%_auto] animate-gradient">Aiswarya</span>
             <br />
-            with <span className="font-mono text-primary">Python</span> at the core.
+            a <span className="font-mono text-primary">Python</span> developer.
           </h1>
 
           <p className="mt-6 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Backend engineer with <span className="text-foreground">3 years</span> of experience
-            crafting high-performance APIs, distributed systems, and developer-friendly
-            integrations.
+            Software Engineer with <span className="text-foreground">3 years</span> of experience
+            building scalable backends with <span className="text-foreground">Django</span>,
+            <span className="text-foreground"> Django REST Framework</span>, and
+            <span className="text-foreground"> FastAPI</span> — shipping 50+ production APIs
+            across healthcare, rental, and queue-management platforms.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -64,20 +66,23 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-8 flex items-center gap-4 text-muted-foreground">
+          <div className="mt-8 flex flex-wrap items-center gap-4 text-muted-foreground">
+            <a
+              href="https://www.linkedin.com/in/aiswarya-v-s-31ba37371"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-primary"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
             <a href="#" className="transition-colors hover:text-primary" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
-            <a href="#" className="transition-colors hover:text-primary" aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5" />
-            </a>
             <div className="h-4 w-px bg-border" />
-            <div className="flex items-center gap-2 text-xs">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-              </span>
-              Open to opportunities
+            <div className="flex items-center gap-1.5 text-xs">
+              <MapPin className="h-3.5 w-3.5" />
+              UAE — Open to relocation
             </div>
           </div>
         </div>
@@ -91,7 +96,7 @@ export function Hero() {
                 <span className="h-3 w-3 rounded-full bg-[oklch(0.65_0.22_25)]" />
                 <span className="h-3 w-3 rounded-full bg-[oklch(0.8_0.15_85)]" />
                 <span className="h-3 w-3 rounded-full bg-primary" />
-                <span className="ml-3 font-mono text-xs text-muted-foreground">developer.py</span>
+                <span className="ml-3 font-mono text-xs text-muted-foreground">aiswarya.py</span>
               </div>
               <pre className="overflow-x-auto p-6 font-mono text-sm leading-relaxed">
                 <code>
@@ -108,28 +113,28 @@ export function Hero() {
                   ))}
                   <div
                     className="mt-4 animate-fade-up opacity-0"
-                    style={{ animationDelay: "1100ms", animationFillMode: "forwards" }}
+                    style={{ animationDelay: "1200ms", animationFillMode: "forwards" }}
                   >
-                    <span className="text-muted-foreground">07  </span>
+                    <span className="text-muted-foreground">08  </span>
                     <span className="text-[oklch(0.75_0.16_300)]">def</span>{" "}
                     <span className="text-primary">ship</span>
                     <span>():</span>
                   </div>
                   <div
                     className="animate-fade-up opacity-0"
-                    style={{ animationDelay: "1250ms", animationFillMode: "forwards" }}
+                    style={{ animationDelay: "1350ms", animationFillMode: "forwards" }}
                   >
-                    <span className="text-muted-foreground">08  </span>
+                    <span className="text-muted-foreground">09  </span>
                     <span className="text-accent">    return</span>{" "}
-                    <span className="text-[oklch(0.8_0.15_85)]">"production-ready"</span>
+                    <span className="text-[oklch(0.8_0.15_85)]">"scalable APIs"</span>
                   </div>
                   <div
                     className="mt-3 flex items-center gap-2 animate-fade-up opacity-0"
-                    style={{ animationDelay: "1450ms", animationFillMode: "forwards" }}
+                    style={{ animationDelay: "1550ms", animationFillMode: "forwards" }}
                   >
                     <span className="text-primary">$</span>
                     <span className="text-foreground/80">python</span>
-                    <span className="text-muted-foreground">developer.py</span>
+                    <span className="text-muted-foreground">aiswarya.py</span>
                     <span className="ml-1 inline-block h-4 w-2 animate-pulse bg-primary" />
                   </div>
                 </code>
