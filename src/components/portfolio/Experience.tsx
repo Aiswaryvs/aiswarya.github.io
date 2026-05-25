@@ -19,7 +19,7 @@ export function Experience() {
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
           kicker="03 — Experience"
-          title="Three years shipping production backends."
+          title="Shipping production backends at scale."
           subtitle="Software Engineer at Pearlsoft Technologies, building real systems used every day."
         />
 

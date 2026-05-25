@@ -4,7 +4,7 @@ const codeLines = [
   { t: "class", v: "Engineer:", c: "text-[oklch(0.75_0.16_300)]" },
   { t: "    name", v: '= "Aiswarya V S"', c: "text-primary" },
   { t: "    role", v: '= "Python Developer"', c: "text-accent" },
-  { t: "    experience", v: '= "3 years"', c: "text-[oklch(0.8_0.15_85)]" },
+  { t: "    focus", v: '= "Scalable Backends"', c: "text-[oklch(0.8_0.15_85)]" },
   { t: "    stack", v: '= ["Django", "FastAPI", "DRF"]', c: "text-primary" },
   { t: "    location", v: '= "UAE — Open to relocate"', c: "text-accent" },
 ];
@@ -42,8 +42,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Software Engineer with <span className="text-foreground">3 years</span> of experience
-            building scalable backends with <span className="text-foreground">Django</span>,
+            Experienced Software Engineer specializing in building scalable backends with{" "}
+            <span className="text-foreground">Django</span>,
             <span className="text-foreground"> Django REST Framework</span>, and
             <span className="text-foreground"> FastAPI</span> — shipping 50+ production APIs
             across healthcare, rental, and queue-management platforms.

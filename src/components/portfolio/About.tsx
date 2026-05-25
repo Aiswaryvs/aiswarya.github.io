@@ -2,7 +2,7 @@ import { Briefcase, GraduationCap, Rocket, Server } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 
 const stats = [
-  { icon: Briefcase, value: "3+", label: "Years experience" },
+  { icon: Briefcase, value: "Prof.", label: "Experience" },
   { icon: Server, value: "50+", label: "REST APIs shipped" },
   { icon: Rocket, value: "7+", label: "Production products" },
   { icon: GraduationCap, value: "MCA", label: "Master's degree" },
@@ -21,8 +21,7 @@ export function About() {
           <div className="md:col-span-3">
             <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
               I'm <span className="text-foreground">Aiswarya V S</span>, a results-driven Software
-              Engineer specializing in Python web development. Over the past{" "}
-              <span className="text-foreground">3 years</span> at{" "}
+              Engineer specializing in Python web development. At{" "}
               <span className="text-foreground">Pearlsoft Technologies</span>, I've designed and
               shipped production-grade backends with{" "}
               <span className="text-primary">Django</span>,{" "}
