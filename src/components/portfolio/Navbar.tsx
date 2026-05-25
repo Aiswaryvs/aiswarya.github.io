@@ -32,15 +32,45 @@ export function Navbar() {
             scrolled ? "glass shadow-lg" : "bg-transparent"
           }`}
         >
-          <a href="#top" className="flex items-center gap-2.5 group">
-            <div className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground font-display text-lg font-bold leading-none shadow-sm transition-transform group-hover:rotate-6 group-hover:shadow-[var(--shadow-glow)]">
-              A
+          <a href="#top" className="flex items-center gap-3 group">
+            <div className="relative">
+              {/* Glow */}
+              <div className="absolute -inset-1.5 rounded-xl bg-primary/20 blur-lg opacity-60 transition-all duration-500 group-hover:opacity-100 group-hover:bg-primary/30" />
+              {/* Mark */}
+              <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl border border-primary/30 bg-background/80 shadow-lg backdrop-blur-sm transition-colors group-hover:border-primary/60">
+                {/* Dot grid pattern */}
+                <div
+                  className="absolute inset-0 opacity-20"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(hsl(var(--primary)) 1px, transparent 1px)",
+                    backgroundSize: "6px 6px",
+                  }}
+                />
+                {/* Corner accents */}
+                <span className="absolute top-1 right-1 h-1.5 w-1.5 rounded-tr-[2px] border-t border-r border-primary/50" />
+                <span className="absolute bottom-1 left-1 h-1.5 w-1.5 rounded-bl-[2px] border-b border-l border-primary/50" />
+                {/* Letter */}
+                <div className="relative flex flex-col items-center leading-none">
+                  <span className="font-display text-xl font-extrabold text-gradient">
+                    A
+                  </span>
+                  <span className="mt-0.5 h-[2px] w-2.5 rounded-full bg-primary shadow-[0_0_6px_hsl(var(--primary))]" />
+                </div>
+              </div>
             </div>
-            <span className="font-mono text-sm tracking-tight">
-              <span>aiswarya</span>
-              <span className="text-primary">.</span>
-              <span className="text-muted-foreground">py</span>
-            </span>
+            <div className="flex flex-col -space-y-0.5">
+              <span className="font-mono text-sm tracking-tight leading-tight">
+                <span className="font-semibold text-foreground">aiswarya</span>
+                <span className="text-primary font-bold">.py</span>
+              </span>
+              <span className="hidden sm:flex items-center gap-1.5">
+                <span className="h-px w-3 bg-primary/40" />
+                <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Backend Engineer
+                </span>
+              </span>
+            </div>
           </a>
 
           <ul className="hidden items-center gap-1 md:flex">
