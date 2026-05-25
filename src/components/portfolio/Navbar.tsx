@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoA from "@/assets/logo-a.png";
 
 const links = [
   { href: "#about", label: "About" },
@@ -34,29 +35,17 @@ export function Navbar() {
         >
           <a href="#top" className="flex items-center gap-3 group">
             <div className="relative">
-              {/* Glow */}
-              <div className="absolute -inset-1.5 rounded-xl bg-primary/20 blur-lg opacity-60 transition-all duration-500 group-hover:opacity-100 group-hover:bg-primary/30" />
-              {/* Mark */}
-              <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl border border-primary/30 bg-background/80 shadow-lg backdrop-blur-sm transition-colors group-hover:border-primary/60">
-                {/* Dot grid pattern */}
-                <div
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(hsl(var(--primary)) 1px, transparent 1px)",
-                    backgroundSize: "6px 6px",
-                  }}
+              {/* Outer glow */}
+              <div className="absolute -inset-2 rounded-2xl bg-primary/30 blur-xl opacity-50 transition-all duration-500 group-hover:opacity-90 group-hover:bg-primary/50 animate-glow" />
+              {/* Inner subtle glow */}
+              <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-br from-primary/40 via-accent/30 to-primary/40 blur-md opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* Logo container */}
+              <div className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-xl border border-primary/40 bg-background/60 shadow-lg backdrop-blur-sm transition-all duration-500 group-hover:border-primary/80 group-hover:scale-105">
+                <img
+                  src={logoA}
+                  alt="Aiswarya logo"
+                  className="h-full w-full object-contain p-0.5 drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)] transition-transform duration-500 group-hover:scale-110"
                 />
-                {/* Corner accents */}
-                <span className="absolute top-1 right-1 h-1.5 w-1.5 rounded-tr-[2px] border-t border-r border-primary/50" />
-                <span className="absolute bottom-1 left-1 h-1.5 w-1.5 rounded-bl-[2px] border-b border-l border-primary/50" />
-                {/* Letter */}
-                <div className="relative flex flex-col items-center leading-none">
-                  <span className="font-display text-xl font-extrabold text-gradient">
-                    A
-                  </span>
-                  <span className="mt-0.5 h-[2px] w-2.5 rounded-full bg-primary shadow-[0_0_6px_hsl(var(--primary))]" />
-                </div>
               </div>
             </div>
             <div className="flex flex-col -space-y-0.5">
