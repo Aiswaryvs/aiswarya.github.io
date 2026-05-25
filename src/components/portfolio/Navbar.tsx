@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Code2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
@@ -32,9 +32,9 @@ export function Navbar() {
             scrolled ? "glass shadow-lg" : "bg-transparent"
           }`}
         >
-          <a href="#top" className="flex items-center gap-2 group">
-            <div className="grid h-9 w-9 place-items-center rounded-lg bg-primary/15 text-primary ring-1 ring-primary/30 transition-transform group-hover:rotate-6">
-              <Code2 className="h-5 w-5" />
+          <a href="#top" className="flex items-center gap-2.5 group">
+            <div className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground font-display text-lg font-bold leading-none shadow-sm transition-transform group-hover:rotate-6 group-hover:shadow-[var(--shadow-glow)]">
+              A
             </div>
             <span className="font-mono text-sm tracking-tight">
               <span>aiswarya</span>
