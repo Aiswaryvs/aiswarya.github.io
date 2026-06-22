@@ -1,4 +1,4 @@
-import { Q as reactExports, I as jsxRuntimeExports } from "./server-tH0qczex.js";
+import { Q as reactExports, I as jsxRuntimeExports } from "./server-Ytp0tpJ7.js";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
@@ -282,7 +282,7 @@ const __iconNode = [
   ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
 ];
 const X = createLucideIcon("x", __iconNode);
-const resume = "/assets/Aiswarya_V_S-C4ylSK8m.pdf";
+const resume = "/aiswarya.github.io/assets/Aiswarya_V_S-C4ylSK8m.pdf";
 const codeLines = [
   { t: "class", v: "Engineer:", c: "text-[oklch(0.75_0.16_300)]" },
   { t: "    name", v: '= "Aiswarya V S"', c: "text-primary" },
@@ -902,7 +902,7 @@ function Contact() {
     ] })
   ] }) }) });
 }
-const logoA = "/assets/logo-a-C9J0xIwJ.png";
+const logoA = "/aiswarya.github.io/assets/logo-a-C9J0xIwJ.png";
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
