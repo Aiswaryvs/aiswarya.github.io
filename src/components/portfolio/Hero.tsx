@@ -1,4 +1,5 @@
 import { ArrowRight, Download, Github, Linkedin, MapPin, Sparkles } from "lucide-react";
+import resume from "../../assets/Aiswarya_V_S.pdf";
 
 const codeLines = [
   { t: "class", v: "Engineer:", c: "text-[oklch(0.75_0.16_300)]" },
@@ -6,7 +7,7 @@ const codeLines = [
   { t: "    role", v: '= "Python Developer"', c: "text-accent" },
   { t: "    focus", v: '= "Scalable Backends"', c: "text-[oklch(0.8_0.15_85)]" },
   { t: "    stack", v: '= ["Django", "FastAPI", "DRF"]', c: "text-primary" },
-  { t: "    location", v: '= "UAE — Open to relocate"', c: "text-accent" },
+  { t: "    location", v: '= "UAE"', c: "text-accent" },
 ];
 
 export function Hero() {
@@ -32,7 +33,7 @@ export function Hero() {
         <div className="animate-fade-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             <Sparkles className="h-3.5 w-3.5" />
-            Available immediately — Own visa, UAE
+            Own visa, UAE
           </span>
 
           <h1 className="mt-6 text-balance font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
@@ -58,7 +59,7 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#contact"
+              href={resume} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface/50 px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-surface-elevated"
             >
               <Download className="h-4 w-4" />
@@ -76,7 +77,7 @@ export function Hero() {
             >
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="#" className="transition-colors hover:text-primary" aria-label="GitHub">
+            <a href="https://github.com/Aiswaryvs" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
             <div className="h-4 w-px bg-border" />

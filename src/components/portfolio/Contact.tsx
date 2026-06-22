@@ -13,7 +13,7 @@ export function Contact() {
             <SectionHeading
               kicker="05 — Contact"
               title="Let's build something solid together."
-              subtitle="Open to Python Developer roles in the UAE and worldwide — available to start immediately."
+              // subtitle="Open to Python Developer roles in the UAE and worldwide — available to start immediately."
               center
             />
 
@@ -52,7 +52,9 @@ export function Contact() {
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/Aiswaryvs"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="GitHub"
                   className="grid h-11 w-11 place-items-center rounded-lg border border-border bg-background/50 text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary"
                 >

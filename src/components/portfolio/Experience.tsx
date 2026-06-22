@@ -48,7 +48,7 @@ export function Experience() {
               </div>
 
               <ul className="mt-5 flex flex-wrap gap-2">
-                {["Django", "DRF", "FastAPI", "Celery", "RabbitMQ", "PostgreSQL", "MongoDB", "React", "Docker"].map(
+                {["Python","Django", "DRF", "FastAPI", "Celery", "RabbitMQ", "PostgreSQL", "MongoDB", "React", "Docker"].map(
                   (t) => (
                     <li
                       key={t}

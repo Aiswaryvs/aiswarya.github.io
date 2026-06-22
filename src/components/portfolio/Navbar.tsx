@@ -56,7 +56,7 @@ export function Navbar() {
               <span className="hidden sm:flex items-center gap-1.5">
                 <span className="h-px w-3 bg-primary/40" />
                 <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
-                  Backend Engineer
+                  Software Engineer
                 </span>
               </span>
             </div>
@@ -75,12 +75,12 @@ export function Navbar() {
             ))}
           </ul>
 
-          <a
+          {/* <a
             href="#contact"
             className="hidden rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:shadow-[var(--shadow-glow)] md:inline-flex"
           >
             Hire me
-          </a>
+          </a> */}
 
           <button
             aria-label="Toggle menu"
@@ -106,13 +106,13 @@ export function Navbar() {
                 </li>
               ))}
               <li>
-                <a
+                {/* <a
                   href="#contact"
                   onClick={() => setOpen(false)}
                   className="mt-2 block rounded-md bg-primary px-4 py-3 text-center text-sm font-medium text-primary-foreground"
                 >
                   Hire me
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>

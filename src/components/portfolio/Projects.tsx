@@ -53,7 +53,7 @@ export function Projects() {
         <SectionHeading
           kicker="04 — Selected work"
           title="Products I've shipped."
-          subtitle="Real backend systems delivered at Pearlsoft Technologies (2022 – 2025)."
+          // subtitle="Real backend systems delivered at Pearlsoft Technologies (2022 – 2025)."
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
